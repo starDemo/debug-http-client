@@ -7,4 +7,3 @@ func init() {
     g.Server().SetDumpRouteMap(false)
     g.Server().SetAccessLogEnabled(true)
 }
-
