@@ -7,5 +7,5 @@ import (
 
 // 统一路由注册.
 func init() {
-    g.Server().BindHandler("/", hello.Handler)
+    g.Server().BindHandler("POST:/debug", hello.Handler)
 }
