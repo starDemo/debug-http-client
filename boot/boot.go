@@ -8,7 +8,6 @@ import (
 func init() {
 	glog.SetPath("/tmp/debug-client")
 	glog.SetStdoutPrint(false)
-    g.Server().SetPort(8199)
-    g.Server().SetDumpRouteMap(false)
-    g.Server().SetAccessLogEnabled(true)
+	g.Server().SetPort(8199)
+	g.Server().SetAccessLogEnabled(true)
 }

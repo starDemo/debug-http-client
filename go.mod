@@ -1,3 +1,6 @@
 module debug-http-client
+require (
+	github.com/gogf/gf v1.11.3
+)
 
-require github.com/gogf/gf v1.9.9
+go 1.13

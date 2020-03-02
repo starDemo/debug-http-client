@@ -8,10 +8,7 @@ import (
 
 // Hello World
 func Handler(r *ghttp.Request) {
-    data, err := r.GetJson()
-    if err != nil{
-    	glog.Error(err)
-	}
-    glog.Info(data)
-    response.Json(r, 0, "ok")
+	data := r.GetBodyString()
+	glog.Info(data)
+	response.Json(r, 0, "ok")
 }
